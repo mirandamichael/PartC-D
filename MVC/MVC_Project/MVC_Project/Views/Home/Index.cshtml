@@ -1,0 +1,13 @@
+﻿<div>
+    <h1>MVC Project</h1>
+    <ul><!-- unordered list -->
+        @foreach (var blog in Model.blogs)
+        {
+        <li>blog : @blog</li> }
+    </ul>
+    <form action="/Home/Insert" method="POST">
+        <label>Blog Name</label>
+        <input type="text" name="name" />
+        <button type="submit">Submit</button>
+    </form>
+</div>
